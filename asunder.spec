@@ -6,7 +6,6 @@ Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Archiving/Cd burning
 URL:		http://littlesvr.ca/isomaster/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	gtk+2-devel
 BuildRequires:	libcddb-devel
 BuildRequires:	desktop-file-utils
