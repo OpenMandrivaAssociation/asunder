@@ -1,11 +1,11 @@
-Summary:	GTK+-based ISO image editor
+Summary:	GTK+-based audio CD ripper and encoder
 Name:		asunder
 Version:	1.0
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Archiving/Cd burning
-URL:		http://littlesvr.ca/isomaster/
+URL:		http://littlesvr.ca/asunder/
 BuildRequires:	gtk+2-devel
 BuildRequires:	libcddb-devel
 BuildRequires:	desktop-file-utils
