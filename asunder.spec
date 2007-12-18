@@ -1,8 +1,8 @@
 Summary:	GTK+-based ISO image editor
 Name:		asunder
-Version:	0.9
+Version:	1.0
 Release:	%{mkrel 1}
-Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.gz
+Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Archiving/Cd burning
 URL:		http://littlesvr.ca/isomaster/
@@ -28,7 +28,7 @@ perl -pi -e 's,%{name}.png,%{name},g' %{name}.desktop
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 %find_lang %name
 
@@ -38,16 +38,16 @@ convert -scale 32 pixmaps/%{name}.png %{buildroot}%{_iconsdir}/hicolor/32x32/app
 convert -scale 16 pixmaps/%{name}.png %{buildroot}%{_iconsdir}/hicolor/16x16/apps/%{name}.png
 
 %post
-%update_icon_cache hicolor
-%update_menus
-%update_desktop_database
+%{update_icon_cache hicolor}
+%{update_menus}
+%{update_desktop_database}
 %postun
-%clean_icon_cache hicolor
-%clean_menus
-%clean_desktop_database
+%{clean_icon_cache hicolor}
+%{clean_menus}
+%{clean_desktop_database}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %name.lang
 %defattr(-,root,root)
