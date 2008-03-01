@@ -1,7 +1,7 @@
 Summary:	GTK+-based audio CD ripper and encoder
 Name:		asunder
-Version:	1.0
-Release:	%{mkrel 2}
+Version:	1.0.2
+Release:	%{mkrel 1}
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Archiving/Cd burning
@@ -31,7 +31,7 @@ perl -pi -e 's,%{name}.png,%{name},g' %{name}.desktop
 %install
 rm -rf %{buildroot}
 %makeinstall_std
-%find_lang %name
+%find_lang %{name}
 
 mkdir -p %{buildroot}%{_iconsdir}/hicolor/{48x48,32x32,16x16}/apps
 convert -scale 48 pixmaps/%{name}.png %{buildroot}%{_iconsdir}/hicolor/48x48/apps/%{name}.png 
@@ -50,7 +50,7 @@ convert -scale 16 pixmaps/%{name}.png %{buildroot}%{_iconsdir}/hicolor/16x16/app
 %clean
 rm -rf %{buildroot}
 
-%files -f %name.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
