@@ -5,7 +5,7 @@ Release:	%{mkrel 1}
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 License:	GPLv2
 Group:		Archiving/Cd burning
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://littlesvr.ca/asunder/
 BuildRequires:	gtk+2-devel
 BuildRequires:	libcddb-devel
