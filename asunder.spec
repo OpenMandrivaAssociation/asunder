@@ -1,6 +1,6 @@
 Summary:	GTK+-based audio CD ripper and encoder
 Name:		asunder
-Version:	1.0.2
+Version:	1.5
 Release:	%{mkrel 1}
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 License:	GPLv2
@@ -14,6 +14,7 @@ BuildRequires:	ImageMagick
 Requires:	cdparanoia
 Suggests:	vorbis-tools
 Suggests:	flac
+Suggests:	wavpack
 
 %description
 Asunder is a graphical Audio CD ripper and encoder for Linux. You can
