@@ -10,7 +10,7 @@ URL:		http://littlesvr.ca/asunder/
 BuildRequires:	gtk+2-devel
 BuildRequires:	libcddb-devel
 BuildRequires:	desktop-file-utils
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 Requires:	cdparanoia
 Suggests:	vorbis-tools
 Suggests:	flac
