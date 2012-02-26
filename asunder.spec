@@ -1,6 +1,6 @@
 Summary:	GTK+-based audio CD ripper and encoder
 Name:		asunder
-Version:	2.1
+Version:	2.2
 Release:	1
 License:	GPLv2
 Group:		Archiving/Cd burning
@@ -9,6 +9,7 @@ Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libcddb)
+BuildRequires:	intltool >= 0.34.90
 
 Requires:	cdparanoia
 Suggests:	lame
@@ -24,21 +25,17 @@ Monkey Audio, and/or FLAC.
 %prep
 %setup -q
 
-# fix icon name in .desktop file
-perl -pi -e 's,%{name}.png,%{name},g' %{name}.desktop
-
 %build
 %configure2_5x
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %{name}
 
 %files -f %{name}.lang
+%doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
-
