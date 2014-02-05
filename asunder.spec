@@ -1,6 +1,6 @@
 Summary:	GTK+-based audio CD ripper and encoder
 Name:		asunder
-Version:	2.3
+Version:	2.4
 Release:	1
 License:	GPLv2
 Group:		Archiving/Cd burning
@@ -110,6 +110,7 @@ Monkey Audio, and/or FLAC.
 * Thu Oct 11 2007 Adam Williamson <awilliamson@mandriva.org> 0.9-1mdv2008.1
 + Revision: 96958
 - import asunder
+
 
 
 
