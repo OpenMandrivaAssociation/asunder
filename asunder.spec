@@ -1,8 +1,8 @@
 Summary:	GTK+-based audio CD ripper and encoder
 
 Name:		asunder
-Version:	2.5
-Release:	2
+Version:	2.8
+Release:	1
 License:	GPLv2
 Group:		Archiving/Cd burning
 URL:		http://littlesvr.ca/asunder/
