@@ -4,5 +4,6 @@ removed_sources:
   asunder-2.4.tar.bz2: f6b23e08891d753fe859573e805c3045d89357d3
   asunder-2.5.tar.bz2: 54dc8bd2e7ae0374336f932a2024307aa05e53c3
   asunder-2.8.tar.bz2: 85872ce9b43eb3b62853c466b0142c0c7c44ab42
-sources:
   asunder-2.9.2.tar.bz2: a6bc5aa06b7235f62e1fd4cbd9a4ed0920215961
+sources:
+  asunder-2.9.3.tar.bz2: 87d01217517265a8bcd8113c99e7a080eb328a79
