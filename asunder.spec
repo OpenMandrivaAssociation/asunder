@@ -5,7 +5,7 @@ Version:	3.0.1
 Release:	1
 License:	GPLv2
 Group:		Archiving/Cd burning
-URL:		http://littlesvr.ca/asunder/
+URL:		https://littlesvr.ca/asunder/
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(gtk+-2.0)
