@@ -8,6 +8,11 @@ Group:		Archiving/Cd burning
 URL:		https://littlesvr.ca/asunder/
 Source0:	http://littlesvr.ca/asunder/releases/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libcddb)
 BuildRequires:	intltool >= 0.34.90
